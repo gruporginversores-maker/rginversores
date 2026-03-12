@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria RG GROUP | Tu Hogar en Buenas Manos</title>
+    <meta name="description" content="Inmobiliaria RG GROUP, expertos en la venta de propiedades exclusivas. Valoración gratuita y asesoramiento inmobiliario de lujo.">
+    <link rel="canonical" href="https://rginversores.com/">
+    <meta property="og:site_name" content="RG GROUP">
+    <meta property="og:title" content="Inmobiliaria RG GROUP | Tu Hogar en Buenas Manos">
+    <meta property="og:description" content="Inmobiliaria RG GROUP, expertos en la venta de propiedades exclusivas. Valoración gratuita y asesoramiento inmobiliario de lujo.">
+    <meta property="og:image" content="https://rginversores.com/logo%20rg.PNG">
+    <meta property="og:url" content="https://rginversores.com/">
+    <meta property="og:type" content="website">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "RG GROUP Inmobiliaria 2024, S.L.",
+      "image": "https://rginversores.com/logo%20rg.PNG",
+      "url": "https://rginversores.com",
+      "telephone": "614 50 18 58",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C/ Alicante 23, local 3",
+        "addressLocality": "San Vicente del Raspeig",
+        "postalCode": "03690",
+        "addressCountry": "ES"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "10:00",
+        "closes": "22:00"
+      },
+      "sameAs": ["https://share.google/7U9SgElLxbwiulqX5"]
+    }
+    </script>
+    <link rel="icon" type="image/png" href="logo rg.PNG">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --dark-blue: #0a192f;
+            --gold: #c5a059;
+            --gold-light: #e2c275;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: var(--dark-blue);
+            scroll-behavior: smooth;
+        }
+
+        .bg-dark-blue {
+            background-color: var(--dark-blue);
+        }
+
+        .text-gold {
+            color: var(--gold);
+        }
+
+        .bg-gold {
+            background-color: var(--gold);
+        }
+
+        .border-gold {
+            border-color: var(--gold);
+        }
+
+        .btn-gold {
+            background-color: var(--gold);
+            color: var(--dark-blue);
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .btn-gold:hover {
+            background-color: var(--gold-light);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(197, 160, 89, 0.4);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)),
+                url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                min-height: 100vh;
+                padding-top: 4rem;
+                padding-bottom: 2rem;
+            }
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--gold);
+            transition: width 0.3s;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .property-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .property-card img {
+            transition: transform 0.5s ease;
+        }
+
+        .stat-card {
+            border-right: 1px solid rgba(197, 160, 89, 0.2);
+        }
+
+        .stat-card:last-child {
+            border-right: none;
+        }
+
+        @media (max-width: 768px) {
+            .stat-card {
+                border-right: none;
+                border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+                padding-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="bg-dark-blue text-white p-4 sticky top-0 z-50 border-b border-gold/30">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index" class="flex items-center gap-2 decoration-transparent">
+                <img src="logo rg.PNG" alt="RG GROUP" class="h-16 w-auto object-contain">
+                <span class="text-3xl font-bold text-white"><span class="text-gold">RG</span> GROUP</span>
+            </a>
+
+            <div class="hidden md:flex space-x-8 font-medium text-sm">
+                <a href="index" class="nav-link hover:text-gold">Inicio</a>
+                <a href="servicios" class="nav-link hover:text-gold">Vender</a>
+                <a href="propiedades" class="nav-link hover:text-gold">Nuestras Propiedades</a>
+                <a href="nosotros" class="nav-link hover:text-gold">Nosotros</a>
+                <a href="blog" class="nav-link hover:text-gold">Actualidad</a>
+                <a href="contacto" class="nav-link hover:text-gold">Contacto</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <button class="md:hidden text-2xl text-gold" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section flex items-center justify-center text-center px-4">
+        <div class="max-w-4xl w-full">
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-black mb-4 leading-tight uppercase tracking-tighter drop-shadow-2xl">
+                <span class="text-gold" style="text-shadow: 0 4px 6px rgba(0,0,0,0.5);">COMPRAMOS</span> <span class="text-white" style="text-shadow: 0 4px 6px rgba(0,0,0,0.5);">TU CASA</span>
+            </h1>
+            <p class="text-xl md:text-3xl text-white mb-8 font-semibold drop-shadow-lg">
+                Hogares exclusivos con RG GROUP
+            </p>
+
+            <!-- Search Form -->
+            <div class="bg-white p-6 rounded-lg shadow-2xl">
+                <iframe name="hidden_iframe_hero" id="hidden_iframe_hero" style="display:none;"
+                    onload="if(submittedHero) {document.getElementById('successModal').classList.remove('hidden');}"></iframe>
+                <form
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSdotBfAl4dKNP2_WQQZIvi23sRFf6p1eIGnRGNydmIW_oEHIw/formResponse"
+                    method="POST" target="hidden_iframe_hero" onsubmit="submittedHero=true"
+                    class="grid grid-cols-1 md:grid-cols-5 gap-4">
+                    <div class="relative">
+                        <select name="entry.1278954438"
+                            class="w-full p-3 bg-gray-50 rounded border border-gray-200 outline-none text-dark-blue font-semibold appearance-none">
+                            <option value="" disabled selected>Operación</option>
+                            <option value="Comprar">Comprar</option>
+                            <option value="Vender">Vender</option>
+                            <option value="Alquilar">Alquilar</option>
+                        </select>
+                        <i class="fas fa-chevron-down absolute right-3 top-4 text-gray-400 pointer-events-none"></i>
+                    </div>
+
+                    <div class="relative">
+                        <input type="text" name="entry.1561153704" placeholder="Zona"
+                            class="w-full p-3 bg-gray-50 rounded border border-gray-200 outline-none text-dark-blue font-semibold placeholder-text-dark-blue">
+                        <i class="fas fa-map-marker-alt absolute right-3 top-4 text-gray-400 pointer-events-none"></i>
+                    </div>
+
+                    <div class="relative">
+                        <select name="entry.314197023"
+                            class="w-full p-3 bg-gray-50 rounded border border-gray-200 outline-none text-dark-blue font-semibold appearance-none">
+                            <option value="" disabled selected>Tipo</option>
+                            <option value="Piso">Piso</option>
+                            <option value="Chalet">Chalet</option>
+                            <option value="Ático">Ático</option>
+                            <option value="Local">Local</option>
+                        </select>
+                        <i class="fas fa-home absolute right-3 top-4 text-gray-400 pointer-events-none"></i>
+                    </div>
+
+                    <div class="relative">
+                        <input type="text" name="entry.451692017" placeholder="Teléfono o Email"
+                            class="w-full p-3 bg-gray-50 rounded border border-gray-200 outline-none text-dark-blue font-semibold placeholder-text-dark-blue">
+                        <i class="fas fa-user absolute right-3 top-4 text-gray-400 pointer-events-none"></i>
+                    </div>
+
+                    <button type="submit"
+                        class="btn-gold rounded font-bold uppercase tracking-wide hover:bg-gold-light transition-colors w-full py-5 text-xl md:py-3 md:text-base">
+                        Enviar
+                    </button>
+
+                    <div class="md:col-span-5 text-left flex items-start gap-2 mt-2">
+                        <input type="checkbox" id="hero-consent" required class="mt-1 accent-gold">
+                        <label for="hero-consent" class="text-xs text-gray-500">
+                            Autorizo a RG GROUP que se pueda comunicar conmigo por el medio solicitado con el fin de
+                            responder a la solicitud enviada.
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-dark-blue py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <div class="stat-card">
+                    <div class="text-gold text-4xl font-bold mb-2">+500</div>
+                    <div class="text-gray-400 uppercase tracking-widest text-xs">Propiedades Vendidas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-gold text-4xl font-bold mb-2">20</div>
+                    <div class="text-gray-400 uppercase tracking-widest text-xs">Años de Experiencia</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-gold text-4xl font-bold mb-2">150</div>
+                    <div class="text-gray-400 uppercase tracking-widest text-xs">Asesores Expertos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-gold text-4xl font-bold mb-2">100%</div>
+                    <div class="text-gray-400 uppercase tracking-widest text-xs">Clientes Satisfechos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Quick Access -->
+    <section id="servicios" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-gold font-bold tracking-widest uppercase text-sm mb-4">Nuestros Servicios</h2>
+                <h3 class="text-3xl md:text-4xl font-bold">Soluciones a tu Medida</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="text-center p-10 border border-gray-100 rounded-2xl hover:shadow-2xl transition-all group hover:-translate-y-2">
+                    <div
+                        class="w-20 h-20 bg-dark-blue text-gold rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-gold group-hover:text-dark-blue transition-colors">
+                        <i class="fas fa-key text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Quiero Comprar</h3>
+                    <p class="text-gray-500 mb-6 leading-relaxed">Accede a propiedades exclusivas antes de que salgan al
+                        mercado público con RG GROUP.</p>
+                    <a href="propiedades"
+                        class="inline-block py-2 px-6 border border-gold text-gold font-bold rounded-full hover:bg-gold hover:text-white transition-colors">Ver
+                        catálogo</a>
+                </div>
+
+                <div
+                    class="text-center p-10 bg-dark-blue text-white rounded-2xl shadow-xl transition-all group hover:-translate-y-2">
+                    <div
+                        class="w-20 h-20 bg-gold text-dark-blue rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-bullhorn text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gold">Quiero Vender</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">Marketing de vanguardia y fotografía profesional para
+                        posicionar tu propiedad.</p>
+                    <a href="servicios"
+                        class="inline-block py-2 px-6 bg-gold text-dark-blue font-bold rounded-full hover:bg-gold-light transition-colors">Vender
+                        ahora</a>
+                </div>
+
+                <div id="valoracion"
+                    class="text-center p-10 border border-gray-100 rounded-2xl hover:shadow-2xl transition-all group hover:-translate-y-2">
+                    <div
+                        class="w-20 h-20 bg-dark-blue text-gold rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-gold group-hover:text-dark-blue transition-colors">
+                        <i class="fas fa-calculator text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Valoración Gratuita</h3>
+                    <p class="text-gray-500 mb-6 leading-relaxed">Análisis comparativo de mercado en 24 horas para
+                        conocer el valor real.</p>
+                    <a href="contacto"
+                        class="inline-block py-2 px-6 border border-gold text-gold font-bold rounded-full hover:bg-gold hover:text-white transition-colors">Solicitar
+                        estudio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exclusive Properties CTA (Replaces Featured Properties) -->
+    <section class="py-20 bg-gray-50 relative overflow-hidden">
+        <!-- Subtle pattern background -->
+        <div class="absolute inset-0 bg-dark-blue opacity-[0.03]"
+            style="background-image: radial-gradient(#444 1px, transparent 1px); background-size: 20px 20px;"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto text-center bg-white p-12 rounded-3xl shadow-xl border border-gray-100">
+                <div class="w-20 h-20 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-8 text-gold">
+                    <i class="fas fa-crown text-4xl"></i>
+                </div>
+
+                <h2 class="text-3xl md:text-5xl font-bold text-dark-blue mb-6">Acceso a Propiedades Exclusivas</h2>
+                <p class="text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl mx-auto">
+                    Por discreción y exclusividad, no publicamos nuestra cartera completa en la web.
+                    Contacte directamente con nosotros para descubrir hogares únicos que no encontrará en el mercado
+                    abierto.
+                </p>
+
+                <div class="flex flex-col sm:flex-row justify-center gap-6">
+                    <a href="contacto"
+                        class="btn-gold py-4 px-10 rounded-full text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 flex items-center justify-center gap-3">
+                        <i class="fas fa-envelope"></i> Contactar Ahora
+                    </a>
+                    <a href="tel:674265270"
+                        class="bg-dark-blue text-white py-4 px-10 rounded-full text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 hover:bg-gray-800 flex items-center justify-center gap-3">
+                        <i class="fas fa-phone-alt"></i> Llamar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-gold font-bold tracking-widest uppercase text-sm mb-4">Experiencias</h2>
+                <h3 class="text-3xl md:text-4xl font-bold">Lo que dicen nuestros clientes</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div
+                    class="p-8 bg-gray-50 rounded-2xl relative overflow-hidden group hover:shadow-lg transition-shadow">
+                    <!-- Moved quotes to background and lowered opacity/z-index -->
+                    <i
+                        class="fas fa-quote-right text-gold/5 text-9xl absolute -bottom-4 -right-4 pointer-events-none transform -rotate-12 group-hover:scale-110 transition-transform duration-500"></i>
+
+                    <p class="text-gray-600 italic mb-6 relative z-10 leading-relaxed">
+                        "La atención personalizada y la profesionalidad del equipo de RG GROUP fue excepcional.
+                        Vendieron mi propiedad en menos de un mes y al precio deseado."
+                    </p>
+                    <div class="flex items-center gap-4 relative z-10">
+                        <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
+                            <img src="https://i.pravatar.cc/150?u=1" alt="Cliente" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-dark-blue">Ricardo S.</h4>
+                            <p class="text-xs text-gold">Propietario en Madrid</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div
+                    class="p-8 bg-gray-50 rounded-2xl relative overflow-hidden group hover:shadow-lg transition-shadow">
+                    <i
+                        class="fas fa-quote-right text-gold/5 text-9xl absolute -bottom-4 -right-4 pointer-events-none transform -rotate-12 group-hover:scale-110 transition-transform duration-500"></i>
+
+                    <p class="text-gray-600 italic mb-6 relative z-10 leading-relaxed">
+                        "Como inversor internacional, busco transparencia y rapidez. RG GROUP me ofreció un
+                        asesoramiento jurídico impecable y una cartera de oportunidades única."
+                    </p>
+                    <div class="flex items-center gap-4 relative z-10">
+                        <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
+                            <img src="https://i.pravatar.cc/150?u=2" alt="Cliente" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-dark-blue">Robert</h4>
+                            <p class="text-xs text-gold">Inversor</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div
+                    class="p-8 bg-gray-50 rounded-2xl relative overflow-hidden group hover:shadow-lg transition-shadow">
+                    <i
+                        class="fas fa-quote-right text-gold/5 text-9xl absolute -bottom-4 -right-4 pointer-events-none transform -rotate-12 group-hover:scale-110 transition-transform duration-500"></i>
+
+                    <p class="text-gray-600 italic mb-6 relative z-10 leading-relaxed">
+                        "Gracias a su gestión conseguimos la casa de nuestros sueños en tiempo récord. El trato humano
+                        marca la diferencia frente a otras agencias."
+                    </p>
+                    <div class="flex items-center gap-4 relative z-10">
+                        <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
+                            <img src="https://i.pravatar.cc/150?u=3" alt="Cliente" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-dark-blue">Familia Torres</h4>
+                            <p class="text-xs text-gold">Compradores</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News / Blog -->
+    <section id="blog" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold">Actualidad Inmobiliaria</h2>
+                    <p class="text-gray-500 mt-2">Consejos, tendencias y noticias del sector luxury.</p>
+                </div>
+                <a href="blog" class="text-gold font-bold hover:underline">Leer todas â†’</a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <a href="articulo-1"
+                    class="block bg-white rounded-xl overflow-hidden group shadow-sm hover:shadow-xl transition-all">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80"
+                            alt="Blog"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-gold text-xs font-bold uppercase tracking-widest">Tendencias</span>
+                        <h4 class="text-lg font-bold mt-2 mb-3 group-hover:text-gold transition-colors">Cómo revalorizar
+                            tu vivienda de lujo</h4>
+                        <p class="text-gray-500 text-sm line-clamp-2">Descubre las 5 reformas que aumentan el valor de
+                            mercado de tu propiedad un 20%.</p>
+                    </div>
+                </a>
+
+                <a href="articulo-2"
+                    class="block bg-white rounded-xl overflow-hidden group shadow-sm hover:shadow-xl transition-all">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?auto=format&fit=crop&w=800&q=80"
+                            alt="Blog"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-gold text-xs font-bold uppercase tracking-widest">Inversión</span>
+                        <h4 class="text-lg font-bold mt-2 mb-3 group-hover:text-gold transition-colors">Zonas con mayor
+                            rentabilidad</h4>
+                        <p class="text-gray-500 text-sm line-clamp-2">Análisis de los barrios con mayor proyección de
+                            crecimiento en las principales ciudades.</p>
+                    </div>
+                </a>
+
+                <a href="articulo-3"
+                    class="block bg-white rounded-xl overflow-hidden group shadow-sm hover:shadow-xl transition-all">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80"
+                            alt="Blog"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-gold text-xs font-bold uppercase tracking-widest">Legal</span>
+                        <h4 class="text-lg font-bold mt-2 mb-3 group-hover:text-gold transition-colors">Guía completa:
+                            Vender a no residentes</h4>
+                        <p class="text-gray-500 text-sm line-clamp-2">Todo lo que necesitas saber sobre impuestos y
+                            trámites para compradores extranjeros.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners -->
+
+
+    <!-- Contact Detailed Section -->
+    <section class="py-20 bg-dark-blue text-white overflow-hidden relative">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6 text-gold">¿Hablamos de tu futuro?</h2>
+                    <p class="text-gray-400 text-lg mb-8">Déjanos tus datos y un asesor experto de RG GROUP se pondrá
+                        en contacto contigo en menos de 1 hora.</p>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-gold/10 rounded-full flex items-center justify-center text-gold">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span>Asesoramiento jurídico y financiero integral.</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-gold/10 rounded-full flex items-center justify-center text-gold">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span>Valoraciones reales basadas en datos de mercado.</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-gold/10 rounded-full flex items-center justify-center text-gold">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span>Gestión de trámites de principio a fin.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-10 rounded-2xl shadow-2xl">
+                    <iframe name="hidden_iframe_footer" id="hidden_iframe_footer" style="display:none;"
+                        onload="if(submittedFooter) {document.getElementById('successModal').classList.remove('hidden');}"></iframe>
+                    <form
+                        action="https://docs.google.com/forms/d/e/1FAIpQLScdoqMgr-SEfdsgE8fzheTp7LNReHRdEtn3Oep9b9pOPohTmQ/formResponse"
+                        method="POST" target="hidden_iframe_footer" onsubmit="submittedFooter=true"
+                        class="space-y-4 text-dark-blue">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase mb-2 text-gray-400">Nombre</label>
+                                <input type="text" name="entry.1262167428"
+                                    class="w-full p-4 bg-gray-50 rounded border-none focus:ring-2 focus:ring-gold outline-none text-black"
+                                    placeholder="Tu nombre">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase mb-2 text-gray-400">Email o
+                                    Teléfono</label>
+                                <input type="text" name="entry.224501462"
+                                    class="w-full p-4 bg-gray-50 rounded border-none focus:ring-2 focus:ring-gold outline-none text-black"
+                                    placeholder="correo@ejemplo.com o 600000000">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase mb-2 text-gray-400">Interés</label>
+                            <select name="entry.614657779"
+                                class="w-full p-4 bg-gray-50 rounded border-none focus:ring-2 focus:ring-gold outline-none appearance-none text-black">
+                                <option value="" disabled selected>Selecciona tu interés</option>
+                                <option value="Quiero Vender">Quiero Vender</option>
+                                <option value="Quiero Comprar">Quiero Comprar</option>
+                                <option value="Valoración de Vivienda">Valoración de Vivienda</option>
+                                <option value="Inversión">Inversión</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase mb-2 text-gray-400">Mensaje</label>
+                            <textarea name="entry.1143167586"
+                                class="w-full p-4 bg-gray-50 rounded border-none focus:ring-2 focus:ring-gold outline-none h-32 text-black"
+                                placeholder="¿Cómo podemos ayudarte?"></textarea>
+                        </div>
+                        <div class="md:col-span-2">
+                            <div class="flex items-start gap-2">
+                                <input type="checkbox" id="contact-consent-index" required
+                                    class="mt-1 accent-gold shrink-0">
+                                <label for="contact-consent-index" class="text-xs text-gray-500">
+                                    Autorizo a RG GROUP que se pueda comunicar conmigo por el medio solicitado con el
+                                    fin de responder a la solicitud enviada.
+                                </label>
+                            </div>
+                        </div>
+                        <button class="w-full btn-gold py-4 rounded font-bold uppercase tracking-widest">
+                            Enviar Solicitud
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Decorative bg -->
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-gold/5 transform skew-x-12 translate-x-32"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-20 pb-10">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex flex-col items-center justify-center gap-8 mb-16">
+                <div>
+                    <div class="text-2xl font-bold mb-8 flex justify-center items-center gap-2">
+                        <img src="logo rg.PNG" alt="RG GROUP" class="h-20 w-auto object-contain">
+                        <span class="text-white"><span class="text-gold">RG</span> GROUP</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-4 max-w-sm mx-auto">
+                        Líderes en el mercado inmobiliario nacional con una red de oficinas propias dedicadas a la
+                        excelencia en el servicio al cliente con RG GROUP.
+                    </p>
+                    <p class="text-gold font-bold mb-8">
+                        <a href="mailto:info@rginversores.com" class="hover:text-white transition-colors"><i class="fas fa-envelope mr-2"></i> info@rginversores.com</a>
+                    </p>
+                    <div class="flex justify-center gap-4">
+                        <!-- Social icons removed as requested -->
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="pt-10 border-t border-gray-800 flex flex-col items-center gap-6 text-gray-500 text-xs uppercase tracking-widest">
+                <div class="flex gap-8">
+                    <a href="aviso-legal" class="hover:text-white transition-colors">Aviso Legal</a>
+                    <a href="privacidad" class="hover:text-white transition-colors">Privacidad</a>
+                    <a href="cookies" class="hover:text-white transition-colors">Cookies</a>
+                </div>
+                <p>&copy; 2026 Inmobiliaria RG GROUP. Made with Excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Container -->
+    <div id="mobileMenu"
+        class="fixed inset-0 bg-dark-blue z-40 transform translate-x-full transition-transform duration-300 md:hidden pt-40 px-6">
+        <div class="flex flex-col space-y-6 text-xl font-bold text-white text-center">
+            <a href="index" class="hover:text-gold transition-colors">Inicio</a>
+            <a href="servicios" class="hover:text-gold transition-colors">Vender</a>
+            <a href="propiedades" class="hover:text-gold transition-colors">Nuestras Propiedades</a>
+            <a href="nosotros" class="hover:text-gold transition-colors">Nosotros</a>
+            <a href="blog" class="hover:text-gold transition-colors">Actualidad</a>
+            <a href="contacto" class="hover:text-gold transition-colors">Contacto</a>
+        </div>
+    </div>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const icon = mobileMenuBtn.querySelector('i');
+        let isMenuOpen = false;
+
+        mobileMenuBtn.addEventListener('click', () => {
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) {
+                mobileMenu.classList.remove('translate-x-full');
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                mobileMenu.classList.add('translate-x-full');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close menu when clicking a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                isMenuOpen = false;
+                mobileMenu.classList.add('translate-x-full');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Form Submission Logic
+        let submittedHero = false;
+        let submittedFooter = false;
+
+        function closeSuccessModal() {
+            document.getElementById('successModal').classList.add('hidden');
+        }
+    </script>
+
+    <!-- Success Popup Modal -->
+    <div id="successModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[100]">
+        <div class="bg-white p-8 rounded-lg shadow-2xl relative max-w-sm w-full text-center">
+            <button onclick="closeSuccessModal()"
+                class="absolute top-2 right-4 text-gray-500 hover:text-gray-800 text-2xl font-bold">
+                &times;
+            </button>
+            <div
+                class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 text-green-600 text-3xl">
+                <i class="fas fa-check"></i>
+            </div>
+            <h3 class="text-xl font-bold text-dark-blue mb-2">¡Gracias!</h3>
+            <p class="text-gray-600">En breve nos pondremos en contacto contigo.</p>
+        </div>
+    </div>
+</body>
+
+
+</html>
+
+
+
+
+

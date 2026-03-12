@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /aviso-legal
+Disallow: /cookies
+Disallow: /privacidad
+
+Sitemap: https://rginversores.com/sitemap.xml

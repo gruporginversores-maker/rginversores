@@ -1,0 +1,458 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades | Inmobiliaria RG GROUP</title>
+    <meta name="description" content="Propiedades exclusivas en RG GROUP. Acceso privado a la excelencia inmobiliaria y servicio de Personal Shopper.">
+    <link rel="canonical" href="https://rginversores.com/propiedades">
+    <meta property="og:site_name" content="RG GROUP">
+    <meta property="og:title" content="Propiedades | Inmobiliaria RG GROUP">
+    <meta property="og:description" content="Propiedades exclusivas en RG GROUP. Acceso privado a la excelencia inmobiliaria y servicio de Personal Shopper.">
+    <meta property="og:image" content="https://rginversores.com/logo%20rg.PNG">
+    <meta property="og:url" content="https://rginversores.com/propiedades">
+    <meta property="og:type" content="website">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "RG GROUP Inmobiliaria 2024, S.L.",
+      "image": "https://rginversores.com/logo%20rg.PNG",
+      "url": "https://rginversores.com",
+      "telephone": "614 50 18 58",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C/ Alicante 23, local 3",
+        "addressLocality": "San Vicente del Raspeig",
+        "postalCode": "03690",
+        "addressCountry": "ES"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "10:00",
+        "closes": "22:00"
+      },
+      "sameAs": ["https://share.google/7U9SgElLxbwiulqX5"]
+    }
+    </script>
+    <link rel="icon" type="image/png" href="logo rg.PNG">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --dark-blue: #0a192f;
+            --gold: #c5a059;
+            --gold-light: #e2c275;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: var(--dark-blue);
+        }
+
+        .bg-dark-blue {
+            background-color: var(--dark-blue);
+        }
+
+        .text-gold {
+            color: var(--gold);
+        }
+
+        .bg-gold {
+            background-color: var(--gold);
+        }
+
+        .border-gold {
+            border-color: var(--gold);
+        }
+
+        .btn-gold {
+            background-color: var(--gold);
+            color: var(--dark-blue);
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .btn-gold:hover {
+            background-color: var(--gold-light);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(197, 160, 89, 0.4);
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--gold);
+            transition: width 0.3s;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .property-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .property-card img {
+            transition: transform 0.5s ease;
+        }
+
+        /* Estilos específicos para las casas dinámicas */
+        .carrusel-img { display: none; width: 100%; height: 400px; object-fit: cover; }
+        .carrusel-img.active { display: block; }
+        .btn-nav { 
+            position: absolute; top: 50%; transform: translateY(-50%);
+            background: rgba(10, 25, 47, 0.7); color: #c5a059; 
+            padding: 15px 10px; border: none; cursor: pointer; z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="bg-dark-blue text-white p-4 sticky top-0 z-50 border-b border-gold/30">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index" class="flex items-center gap-2 decoration-transparent">
+                <img src="logo rg.PNG" alt="RG GROUP" class="h-16 w-auto object-contain">
+                <span class="text-3xl font-bold text-white"><span class="text-gold">RG</span> GROUP</span>
+            </a>
+
+            <div class="hidden md:flex space-x-8 font-medium text-sm">
+                <a href="index" class="nav-link hover:text-gold">Inicio</a>
+                <a href="servicios" class="nav-link hover:text-gold">Vender</a>
+                <a href="propiedades" class="nav-link hover:text-gold">Nuestras Propiedades</a>
+                <a href="nosotros" class="nav-link hover:text-gold">Nosotros</a>
+                <a href="blog" class="nav-link hover:text-gold">Actualidad</a>
+                <a href="contacto" class="nav-link hover:text-gold">Contacto</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <button class="md:hidden text-2xl text-gold" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative py-24 flex items-center justify-center text-center text-white overflow-hidden">
+        <div class="absolute inset-0 bg-dark-blue z-0">
+            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1920&q=80"
+                alt="Background" class="w-full h-full object-cover opacity-40">
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Propiedades Exclusivas</h1>
+            <p class="text-xl md:text-2xl text-gold font-light tracking-wide">Acceso exclusivo a nuestras propiedades</p>
+        </div>
+    </section>
+
+    <section id="seccion-dinamica" class="py-12 bg-gray-100 hidden">
+        <div class="container mx-auto px-4">
+            <div id="contenedor-casas" class="space-y-12">
+                </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text- gold font-bold tracking-widest uppercase text-sm mb-4 text-gold">Nuestra Filosofía
+                    </h2>
+                    <h3 class="text-3xl md:text-4xl font-bold mb-6 text-dark-blue">Más allá del mercado convencional
+                    </h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        En RG GROUP, entendemos que la verdadera exclusividad requiere discreción. Por ello, la
+                        mayoría de nuestras propiedades más selectas no se publican en portales inmobiliarios ni en
+                        nuestra propia web de forma abierta.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Gestionamos una cartera privada de activos premium ("Off-Market") a la que solo tienen acceso
+                        nuestros clientes cualificados. Esto garantiza la privacidad tanto de vendedores como de
+                        compradores.
+                    </p>
+                    <a href="contacto"
+                        class="btn-gold py-3 px-8 rounded-full font-bold inline-block hover:shadow-lg transition-all">
+                        Solicitar Acceso Privado
+                    </a>
+                </div>
+                <div class="relative">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-gold/10 rounded-full z-0"></div>
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+                        alt="Interior Luxury"
+                        class="rounded-2xl shadow-xl relative z-10 w-full transform hover:scale-[1.02] transition-transform duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-dark-blue">Nuestra Cartera</h3>
+                <div class="w-24 h-1 bg-gold mt-4 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-2xl transition-all group">
+                    <div
+                        class="w-16 h-16 bg-dark-blue text-gold rounded-full flex items-center justify-center mb-6 text-2xl group-hover:bg-gold group-hover:text-dark-blue transition-colors">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Áticos en el Centro</h4>
+                    <p class="text-gray-500">Viviendas únicas con vistas panorámicas en las zonas más prestigiosas de la
+                        ciudad.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-2xl transition-all group">
+                    <div
+                        class="w-16 h-16 bg-dark-blue text-gold rounded-full flex items-center justify-center mb-6 text-2xl group-hover:bg-gold group-hover:text-dark-blue transition-colors">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Villas Independientes</h4>
+                    <p class="text-gray-500">Privacidad y espacio en urbanizaciones de lujo con seguridad 24 horas.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-2xl transition-all group">
+                    <div
+                        class="w-16 h-16 bg-dark-blue text-gold rounded-full flex items-center justify-center mb-6 text-2xl group-hover:bg-gold group-hover:text-dark-blue transition-colors">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Propiedades en Costa</h4>
+                    <p class="text-gray-500">Segundas residencias exclusivas en BenicÃ ssim y Oropesa del Mar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-dark-blue text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/2 order-2 md:order-1">
+                    <img src="personal%20shopper.png"
+                        alt="Personal Shopper" class="rounded-xl shadow-2xl opacity-90">
+                </div>
+                <div class="md:w-1/2 order-1 md:order-2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Servicio de Personal Shopper</h2>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        No solo vendemos casas, le ayudamos a comprar. Nuestro servicio de búsqueda personalizada
+                        rastrea todo el mercado para encontrar exactamente lo que necesita, ahorrándole tiempo y
+                        gestiones ineficaces.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-gold"></i>
+                            <span>Análisis exhaustivo de sus necesidades y estilo de vida.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-gold"></i>
+                            <span>Pre-selección y visitas filtradas.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-gold"></i>
+                            <span>Negociación experta del precio final.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-gold font-bold uppercase tracking-widest text-sm mb-2">El Camino a su Hogar</h2>
+                <h3 class="text-3xl font-bold text-dark-blue">Proceso de Compra</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                <div class="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-gray-200 -z-0"></div>
+
+                <div class="relative z-10 text-center bg-white p-4">
+                    <div
+                        class="w-24 h-24 bg-dark-blue text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-6 border-4 border-white shadow-lg">
+                        1</div>
+                    <h4 class="font-bold text-xl mb-2">Entrevista</h4>
+                    <p class="text-gray-500 text-sm">Definimos sus requerimientos, presupuesto y zonas de interés.</p>
+                </div>
+                <div class="relative z-10 text-center bg-white p-4">
+                    <div
+                        class="w-24 h-24 bg-white text-dark-blue border-2 border-dark-blue rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-6 shadow-lg">
+                        2</div>
+                    <h4 class="font-bold text-xl mb-2">Selección</h4>
+                    <p class="text-gray-500 text-sm">Presentamos una lista curada de oportunidades On y Off-Market.</p>
+                </div>
+                <div class="relative z-10 text-center bg-white p-4">
+                    <div
+                        class="w-24 h-24 bg-white text-dark-blue border-2 border-dark-blue rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-6 shadow-lg">
+                        3</div>
+                    <h4 class="font-bold text-xl mb-2">Visitas</h4>
+                    <p class="text-gray-500 text-sm">Organizamos visitas privadas ajustadas a su agenda.</p>
+                </div>
+                <div class="relative z-10 text-center bg-white p-4">
+                    <div
+                        class="w-24 h-24 bg-gold text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-6 border-4 border-white shadow-lg">
+                        4</div>
+                    <h4 class="font-bold text-xl mb-2">Cierre</h4>
+                    <p class="text-gray-500 text-sm">Asesoramiento legal y acompañamiento hasta la firma notarial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-gray-50 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gold/5 transform -skew-y-3 origin-top-left scale-110"></div>
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h2 class="text-4xl font-bold text-dark-blue mb-8">¿Listo para encontrar su próxima propiedad?</h2>
+            <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+                No espere a que aparezca en internet. Las mejores oportunidades se venden antes de ser publicadas.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="contacto"
+                    class="btn-gold py-4 px-12 rounded-lg font-bold text-lg shadow-xl hover:-translate-y-1 transition-transform">
+                    Contactar con un Asesor
+                </a>
+                <a href="servicios"
+                    class="px-12 py-4 rounded-lg border-2 border-dark-blue text-dark-blue font-bold text-lg hover:bg-dark-blue hover:text-white transition-colors">
+                    Saber más sobre Venta
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white pt-20 pb-10">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex flex-col items-center justify-center gap-8 mb-16">
+                <div>
+                    <div class="text-2xl font-bold mb-8 flex justify-center items-center gap-2">
+                        <img src="logo rg.PNG" alt="RG GROUP" class="h-20 w-auto object-contain">
+                        <span class="text-white"><span class="text-gold">RG</span> GROUP</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-4 max-w-sm mx-auto">
+                        Líderes en el mercado inmobiliario nacional con una red de oficinas propias dedicadas a la
+                        excelencia en el servicio al cliente con RG GROUP.
+                    </p>
+                    <p class="text-gold font-bold mb-8">
+                        <a href="mailto:info@rginversores.com" class="hover:text-white transition-colors"><i class="fas fa-envelope mr-2"></i> info@rginversores.com</a>
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="pt-10 border-t border-gray-800 flex flex-col items-center gap-6 text-gray-500 text-xs uppercase tracking-widest">
+                <div class="flex gap-8">
+                    <a href="aviso-legal" class="hover:text-white transition-colors">Aviso Legal</a>
+                    <a href="privacidad" class="hover:text-white transition-colors">Privacidad</a>
+                    <a href="cookies" class="hover:text-white transition-colors">Cookies</a>
+                </div>
+                <p>&copy; 2026 Inmobiliaria RG GROUP. Made with Excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="mobileMenu"
+        class="fixed inset-0 bg-dark-blue z-40 transform translate-x-full transition-transform duration-300 md:hidden pt-40 px-6">
+        <div class="flex flex-col space-y-6 text-xl font-bold text-white text-center">
+            <a href="index" class="hover:text-gold transition-colors">Inicio</a>
+            <a href="servicios" class="hover:text-gold transition-colors">Vender</a>
+            <a href="propiedades" class="hover:text-gold transition-colors">Nuestras Propiedades</a>
+            <a href="nosotros" class="hover:text-gold transition-colors">Nosotros</a>
+            <a href="blog" class="hover:text-gold transition-colors">Actualidad</a>
+            <a href="contacto" class="hover:text-gold transition-colors">Contacto</a>
+        </div>
+    </div>
+
+    <script>
+        // LÃ“GICA DEL MENÃš MÃ“VIL (MANTENIDA)
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const icon = mobileMenuBtn.querySelector('i');
+        let isMenuOpen = false;
+
+        mobileMenuBtn.addEventListener('click', () => {
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) {
+                mobileMenu.classList.remove('translate-x-full');
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                mobileMenu.classList.add('translate-x-full');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                isMenuOpen = false;
+                mobileMenu.classList.add('translate-x-full');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // LÃ“GICA DE CARGA DE PROPIEDADES (NUEVA)
+        const API_URL = 'https://script.google.com/macros/s/AKfycby4IZRpRjiQ-RbylG2wfLbFgRmA4nGegN1dOBMnNJRkBUUzefd47sa8h_NMRA0l75imdQ/exec?getJson=true';
+
+        async function cargarPropiedades() {
+            try {
+                const res = await fetch(API_URL);
+                const casas = await res.json();
+                
+                if (casas.length === 0) return;
+
+                document.getElementById('seccion-dinamica').classList.remove('hidden');
+                const contenedor = document.getElementById('contenedor-casas');
+
+                casas.forEach(casa => {
+                    let fotosHtml = casa.imagenes.map((url, i) => 
+                        `<img src="${url}" class="carrusel-img img-${casa.id} ${i === 0 ? 'active' : ''}">`
+                    ).join('');
+
+                    contenedor.innerHTML += `
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row border border-gray-200">
+                            <div class="relative md:w-1/2 h-[400px] overflow-hidden bg-black">
+                                ${fotosHtml}
+                                <button class="btn-nav left-0" onclick="moverCarrusel('${casa.id}', -1)">â®</button>
+                                <button class="btn-nav right-0" onclick="moverCarrusel('${casa.id}', 1)">â¯</button>
+                            </div>
+                            <div class="md:w-1/2 p-8 flex flex-col justify-center">
+                                <span class="text-gold font-bold uppercase tracking-widest text-sm mb-2">${casa.provincia}</span>
+                                <h3 class="text-2xl font-bold text-dark-blue mb-2">${casa.calle}</h3>
+                                <div class="text-3xl font-bold text-gold mb-6">${casa.precio} €</div>
+                                <p class="text-gray-600 mb-8 line-clamp-4">${casa.descripcion}</p>
+                                <a href="${casa.url}" target="_blank" 
+                                   class="bg-dark-blue text-white py-4 px-8 rounded-lg font-bold text-center hover:bg-gold hover:text-dark-blue transition-all">
+                                   Ver Anuncio Completo
+                                </a>
+                            </div>
+                        </div>
+                    `;
+                });
+            } catch (error) {
+                console.log("No se pudieron cargar propiedades dinámicas");
+            }
+        }
+
+        function moverCarrusel(id, direccion) {
+            const imagenes = document.querySelectorAll(`.img-${id}`);
+            let activa = Array.from(imagenes).findIndex(img => img.classList.contains('active'));
+            imagenes[activa].classList.remove('active');
+            let siguiente = (activa + direccion + imagenes.length) % imagenes.length;
+            imagenes[siguiente].classList.add('active');
+        }
+
+        cargarPropiedades();
+    </script>
+</body>
+</html>
+

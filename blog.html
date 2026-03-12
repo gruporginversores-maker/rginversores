@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualidad | RG GROUP</title>
+    <link rel="icon" type="image/png" href="logo rg.PNG">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --dark-blue: #0a192f;
+            --gold: #c5a059;
+            --gold-light: #e2c275;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: var(--dark-blue);
+        }
+
+        .bg-dark-blue {
+            background-color: var(--dark-blue);
+        }
+
+        .text-gold {
+            color: var(--gold);
+        }
+
+        .bg-gold {
+            background-color: var(--gold);
+        }
+
+        .btn-gold {
+            background-color: var(--gold);
+            color: var(--dark-blue);
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+
+        .btn-gold:hover {
+            background-color: var(--gold-light);
+            transform: translateY(-2px);
+        }
+
+        .nav-link:hover {
+            color: var(--gold);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="bg-dark-blue text-white p-4 sticky top-0 z-50 border-b border-gold/30">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index" class="flex items-center gap-2 decoration-transparent">
+                <img src="logo rg.PNG" alt="RG GROUP" class="h-16 w-auto object-contain">
+                <span class="text-3xl font-bold text-white"><span class="text-gold">RG</span> GROUP</span>
+            </a>
+
+            <div class="hidden md:flex space-x-8 font-medium text-sm">
+                <a href="index" class="nav-link hover:text-gold">Inicio</a>
+                <a href="servicios" class="nav-link hover:text-gold">Vender</a>
+                <a href="propiedades" class="nav-link hover:text-gold">Nuestras Propiedades</a>
+                <a href="nosotros" class="nav-link hover:text-gold">Nosotros</a>
+                <a href="blog" class="nav-link hover:text-gold">Actualidad</a>
+                <a href="contacto" class="nav-link hover:text-gold">Contacto</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <button class="md:hidden text-2xl text-gold" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="bg-white py-12 px-4 border-b">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold mb-4">Actualidad Inmobiliaria</h1>
+            <p class="text-gray-500 max-w-2xl mx-auto">Análisis de mercado, consejos de inversión y las últimas
+                tendencias en el sector del lujo.</p>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <div class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Article 1 -->
+            <a href="articulo-1"
+                class="block bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all group">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-6">
+                    <span class="text-gold text-xs font-bold uppercase tracking-widest block mb-3">Tendencias</span>
+                    <h3 class="text-lg font-bold mb-3 group-hover:text-gold transition-colors">Cómo revalorizar tu
+                        vivienda de lujo</h3>
+                    <p class="text-gray-500 text-sm line-clamp-3">Descubre las 5 reformas que aumentan el valor de
+                        mercado de tu propiedad un 20%.</p>
+                </div>
+            </a>
+
+            <!-- Article 2 -->
+            <a href="articulo-2"
+                class="block bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all group">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?auto=format&fit=crop&w=800&q=80"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-6">
+                    <span class="text-gold text-xs font-bold uppercase tracking-widest block mb-3">Inversión</span>
+                    <h3 class="text-lg font-bold mb-3 group-hover:text-gold transition-colors">Zonas con mayor
+                        rentabilidad</h3>
+                    <p class="text-gray-500 text-sm line-clamp-3">Análisis de los barrios con mayor proyección de
+                        crecimiento en las principales ciudades.</p>
+                </div>
+            </a>
+
+            <!-- Article 3 -->
+            <a href="articulo-3"
+                class="block bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all group">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-6">
+                    <span class="text-gold text-xs font-bold uppercase tracking-widest block mb-3">Legal</span>
+                    <h3 class="text-lg font-bold mb-3 group-hover:text-gold transition-colors">Guía completa: Vender a
+                        no residentes</h3>
+                    <p class="text-gray-500 text-sm line-clamp-3">Todo lo que necesitas saber sobre impuestos y trámites
+                        para compradores extranjeros.</p>
+                </div>
+            </a>
+
+            <!-- Article 4 -->
+            <a href="articulo-4"
+                class="block bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all group">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-6">
+                    <span class="text-gold text-xs font-bold uppercase tracking-widest block mb-3">Diseño</span>
+                    <h3 class="text-lg font-bold mb-3 group-hover:text-gold transition-colors">Tendencias en Diseño de
+                        Interiores 2026</h3>
+                    <p class="text-gray-500 text-sm line-clamp-3">Minimalismo cálido, materiales naturales y tecnología
+                        integrada: el futuro del hogar.</p>
+                </div>
+            </a>
+
+            <!-- Article 5 -->
+            <a href="articulo-5"
+                class="block bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all group">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1697538022665-e170c3616c5b?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-6">
+                    <span class="text-gold text-xs font-bold uppercase tracking-widest block mb-3">Sostenibilidad</span>
+                    <h3 class="text-lg font-bold mb-3 group-hover:text-gold transition-colors">Invertir en Propiedades
+                        Sostenibles</h3>
+                    <p class="text-gray-500 text-sm line-clamp-3">Por qué las viviendas eco-eficientes son el activo más
+                        seguro a largo plazo.</p>
+                </div>
+            </a>
+
+            <!-- Article 6 -->
+            <a href="articulo-6"
+                class="block bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all group">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1515263487990-61b07816b324?auto=format&fit=crop&w=800&q=80"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-6">
+                    <span class="text-gold text-xs font-bold uppercase tracking-widest block mb-3">Estilo de Vida</span>
+                    <h3 class="text-lg font-bold mb-3 group-hover:text-gold transition-colors">Vivir en la Costa vs La
+                        Ciudad</h3>
+                    <p class="text-gray-500 text-sm line-clamp-3">Ventajas y desafíos de cambiar tu residencia habitual
+                        frente al mar.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-20 pb-10">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex flex-col items-center justify-center gap-8 mb-16">
+                <div>
+                    <div class="text-2xl font-bold mb-8 flex justify-center items-center gap-2">
+                        <img src="logo rg.PNG" alt="RG GROUP" class="h-20 w-auto object-contain">
+                        <span class="text-white"><span class="text-gold">RG</span> GROUP</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-4 max-w-sm mx-auto">
+                        Líderes en el mercado inmobiliario nacional con una red de oficinas propias dedicadas a la
+                        excelencia en el servicio al cliente con RG GROUP.
+                    </p>
+                    <p class="text-gold font-bold mb-8">
+                        <a href="mailto:info@rginversores.com" class="hover:text-white transition-colors"><i class="fas fa-envelope mr-2"></i> info@rginversores.com</a>
+                    </p>
+                    <div class="flex justify-center gap-4">
+                        <!-- Social icons removed -->
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="pt-10 border-t border-gray-800 flex flex-col items-center gap-6 text-gray-500 text-xs uppercase tracking-widest">
+                <div class="flex gap-8">
+                    <a href="aviso-legal" class="hover:text-white transition-colors">Aviso Legal</a>
+                    <a href="privacidad" class="hover:text-white transition-colors">Privacidad</a>
+                    <a href="cookies" class="hover:text-white transition-colors">Cookies</a>
+                </div>
+                <p>&copy; 2026 Inmobiliaria RG GROUP. Made with Excellence.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Mobile Menu Container -->
+    <div id="mobileMenu"
+        class="fixed inset-0 bg-dark-blue z-40 transform translate-x-full transition-transform duration-300 md:hidden pt-40 px-6">
+        <div class="flex flex-col space-y-6 text-xl font-bold text-white text-center">
+            <a href="index" class="hover:text-gold transition-colors">Inicio</a>
+            <a href="servicios" class="hover:text-gold transition-colors">Vender</a>
+            <a href="propiedades" class="hover:text-gold transition-colors">Nuestras Propiedades</a>
+            <a href="nosotros" class="hover:text-gold transition-colors">Nosotros</a>
+            <a href="blog" class="hover:text-gold transition-colors">Actualidad</a>
+            <a href="contacto" class="hover:text-gold transition-colors">Contacto</a>
+        </div>
+    </div>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const icon = mobileMenuBtn.querySelector('i');
+        let isMenuOpen = false;
+
+        mobileMenuBtn.addEventListener('click', () => {
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) {
+                mobileMenu.classList.remove('translate-x-full');
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                mobileMenu.classList.add('translate-x-full');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close menu when clicking a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                isMenuOpen = false;
+                mobileMenu.classList.add('translate-x-full');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+    </script>
+</body>
+
+</html>
